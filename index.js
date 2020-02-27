@@ -111,15 +111,16 @@ this.favoriteToy=favoriteToy;
 Baby.prototype=Object.create(Person.prototype);
 Baby.prototype.play=function(){
   return `Playing with${this.favoriteToy}`;
+  
 }
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1.global binding: when in the global  scope, .this will reference the window or console object.
+  2.implicit binding: when a dot calls a function, .this references  the object before the dot.
+  3.new binding: when used with a constructor function, .this references the specific instance of the object created by the constructor.
+  4. explicit binding: .this is explicitly defined  when used with the call or apply method.
 */
 
 
